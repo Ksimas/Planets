@@ -1,0 +1,92 @@
+c:\Kredek\krystian_wolszczak\lab6\Planets\Planets\bin\ApplicationInsights.config
+c:\Kredek\krystian_wolszczak\lab6\Planets\Planets\bin\Planets.dll.config
+c:\Kredek\krystian_wolszczak\lab6\Planets\Planets\bin\Planets.dll
+c:\Kredek\krystian_wolszczak\lab6\Planets\Planets\bin\Planets.pdb
+c:\Kredek\krystian_wolszczak\lab6\Planets\Planets\bin\Antlr3.Runtime.dll
+c:\Kredek\krystian_wolszczak\lab6\Planets\Planets\bin\Microsoft.AI.Agent.Intercept.dll
+c:\Kredek\krystian_wolszczak\lab6\Planets\Planets\bin\Microsoft.AI.DependencyCollector.dll
+c:\Kredek\krystian_wolszczak\lab6\Planets\Planets\bin\Microsoft.AI.PerfCounterCollector.dll
+c:\Kredek\krystian_wolszczak\lab6\Planets\Planets\bin\Microsoft.AI.ServerTelemetryChannel.dll
+c:\Kredek\krystian_wolszczak\lab6\Planets\Planets\bin\Microsoft.AI.Web.dll
+c:\Kredek\krystian_wolszczak\lab6\Planets\Planets\bin\Microsoft.AI.WindowsServer.dll
+c:\Kredek\krystian_wolszczak\lab6\Planets\Planets\bin\Microsoft.ApplicationInsights.dll
+c:\Kredek\krystian_wolszczak\lab6\Planets\Planets\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+c:\Kredek\krystian_wolszczak\lab6\Planets\Planets\bin\Microsoft.Web.Infrastructure.dll
+c:\Kredek\krystian_wolszczak\lab6\Planets\Planets\bin\Newtonsoft.Json.dll
+c:\Kredek\krystian_wolszczak\lab6\Planets\Planets\bin\System.Web.Helpers.dll
+c:\Kredek\krystian_wolszczak\lab6\Planets\Planets\bin\System.Web.Mvc.dll
+c:\Kredek\krystian_wolszczak\lab6\Planets\Planets\bin\System.Web.Optimization.dll
+c:\Kredek\krystian_wolszczak\lab6\Planets\Planets\bin\System.Web.Razor.dll
+c:\Kredek\krystian_wolszczak\lab6\Planets\Planets\bin\System.Web.WebPages.Deployment.dll
+c:\Kredek\krystian_wolszczak\lab6\Planets\Planets\bin\System.Web.WebPages.dll
+c:\Kredek\krystian_wolszczak\lab6\Planets\Planets\bin\System.Web.WebPages.Razor.dll
+c:\Kredek\krystian_wolszczak\lab6\Planets\Planets\bin\WebGrease.dll
+c:\Kredek\krystian_wolszczak\lab6\Planets\Planets\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+c:\Kredek\krystian_wolszczak\lab6\Planets\Planets\bin\System.Web.Helpers.xml
+c:\Kredek\krystian_wolszczak\lab6\Planets\Planets\bin\System.Web.Mvc.xml
+c:\Kredek\krystian_wolszczak\lab6\Planets\Planets\bin\System.Web.Optimization.xml
+c:\Kredek\krystian_wolszczak\lab6\Planets\Planets\bin\System.Web.Razor.xml
+c:\Kredek\krystian_wolszczak\lab6\Planets\Planets\bin\System.Web.WebPages.xml
+c:\Kredek\krystian_wolszczak\lab6\Planets\Planets\bin\System.Web.WebPages.Deployment.xml
+c:\Kredek\krystian_wolszczak\lab6\Planets\Planets\bin\System.Web.WebPages.Razor.xml
+c:\Kredek\krystian_wolszczak\lab6\Planets\Planets\bin\Antlr3.Runtime.pdb
+c:\Kredek\krystian_wolszczak\lab6\Planets\Planets\bin\Newtonsoft.Json.xml
+c:\Kredek\krystian_wolszczak\lab6\Planets\Planets\bin\Microsoft.ApplicationInsights.xml
+c:\Kredek\krystian_wolszczak\lab6\Planets\Planets\bin\Microsoft.AI.DependencyCollector.xml
+c:\Kredek\krystian_wolszczak\lab6\Planets\Planets\bin\Microsoft.AI.ServerTelemetryChannel.xml
+c:\Kredek\krystian_wolszczak\lab6\Planets\Planets\bin\Microsoft.AI.WindowsServer.xml
+c:\Kredek\krystian_wolszczak\lab6\Planets\Planets\bin\Microsoft.AI.Web.xml
+c:\Kredek\krystian_wolszczak\lab6\Planets\Planets\obj\Debug\Planets.csprojResolveAssemblyReference.cache
+c:\Kredek\krystian_wolszczak\lab6\Planets\Planets\obj\Debug\Planets.csproj.CoreCompileInputs.cache
+c:\Kredek\krystian_wolszczak\lab6\Planets\Planets\obj\Debug\Planets.dll
+c:\Kredek\krystian_wolszczak\lab6\Planets\Planets\obj\Debug\Planets.pdb
+c:\Kredek\krystian_wolszczak\lab6\Planets\Planets\bin\EntityFramework.dll
+c:\Kredek\krystian_wolszczak\lab6\Planets\Planets\bin\EntityFramework.SqlServer.dll
+c:\Kredek\krystian_wolszczak\lab6\Planets\Planets\bin\EntityFramework.xml
+c:\Kredek\krystian_wolszczak\lab6\Planets\Planets\bin\EntityFramework.SqlServer.xml
+C:\Kredek\krystian_wolszczak\lab7\Planets 7\Planets\bin\ApplicationInsights.config
+C:\Kredek\krystian_wolszczak\lab7\Planets 7\Planets\bin\Planets.dll.config
+C:\Kredek\krystian_wolszczak\lab7\Planets 7\Planets\bin\Planets.dll
+C:\Kredek\krystian_wolszczak\lab7\Planets 7\Planets\bin\Planets.pdb
+C:\Kredek\krystian_wolszczak\lab7\Planets 7\Planets\bin\Antlr3.Runtime.dll
+C:\Kredek\krystian_wolszczak\lab7\Planets 7\Planets\bin\EntityFramework.dll
+C:\Kredek\krystian_wolszczak\lab7\Planets 7\Planets\bin\EntityFramework.SqlServer.dll
+C:\Kredek\krystian_wolszczak\lab7\Planets 7\Planets\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Kredek\krystian_wolszczak\lab7\Planets 7\Planets\bin\Microsoft.AI.DependencyCollector.dll
+C:\Kredek\krystian_wolszczak\lab7\Planets 7\Planets\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Kredek\krystian_wolszczak\lab7\Planets 7\Planets\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Kredek\krystian_wolszczak\lab7\Planets 7\Planets\bin\Microsoft.AI.Web.dll
+C:\Kredek\krystian_wolszczak\lab7\Planets 7\Planets\bin\Microsoft.AI.WindowsServer.dll
+C:\Kredek\krystian_wolszczak\lab7\Planets 7\Planets\bin\Microsoft.ApplicationInsights.dll
+C:\Kredek\krystian_wolszczak\lab7\Planets 7\Planets\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Kredek\krystian_wolszczak\lab7\Planets 7\Planets\bin\Microsoft.Web.Infrastructure.dll
+C:\Kredek\krystian_wolszczak\lab7\Planets 7\Planets\bin\Newtonsoft.Json.dll
+C:\Kredek\krystian_wolszczak\lab7\Planets 7\Planets\bin\System.Web.Helpers.dll
+C:\Kredek\krystian_wolszczak\lab7\Planets 7\Planets\bin\System.Web.Mvc.dll
+C:\Kredek\krystian_wolszczak\lab7\Planets 7\Planets\bin\System.Web.Optimization.dll
+C:\Kredek\krystian_wolszczak\lab7\Planets 7\Planets\bin\System.Web.Razor.dll
+C:\Kredek\krystian_wolszczak\lab7\Planets 7\Planets\bin\System.Web.WebPages.Deployment.dll
+C:\Kredek\krystian_wolszczak\lab7\Planets 7\Planets\bin\System.Web.WebPages.dll
+C:\Kredek\krystian_wolszczak\lab7\Planets 7\Planets\bin\System.Web.WebPages.Razor.dll
+C:\Kredek\krystian_wolszczak\lab7\Planets 7\Planets\bin\WebGrease.dll
+C:\Kredek\krystian_wolszczak\lab7\Planets 7\Planets\bin\EntityFramework.xml
+C:\Kredek\krystian_wolszczak\lab7\Planets 7\Planets\bin\EntityFramework.SqlServer.xml
+C:\Kredek\krystian_wolszczak\lab7\Planets 7\Planets\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Kredek\krystian_wolszczak\lab7\Planets 7\Planets\bin\System.Web.Helpers.xml
+C:\Kredek\krystian_wolszczak\lab7\Planets 7\Planets\bin\System.Web.Mvc.xml
+C:\Kredek\krystian_wolszczak\lab7\Planets 7\Planets\bin\System.Web.Optimization.xml
+C:\Kredek\krystian_wolszczak\lab7\Planets 7\Planets\bin\System.Web.Razor.xml
+C:\Kredek\krystian_wolszczak\lab7\Planets 7\Planets\bin\System.Web.WebPages.xml
+C:\Kredek\krystian_wolszczak\lab7\Planets 7\Planets\bin\System.Web.WebPages.Deployment.xml
+C:\Kredek\krystian_wolszczak\lab7\Planets 7\Planets\bin\System.Web.WebPages.Razor.xml
+C:\Kredek\krystian_wolszczak\lab7\Planets 7\Planets\bin\Antlr3.Runtime.pdb
+C:\Kredek\krystian_wolszczak\lab7\Planets 7\Planets\bin\Newtonsoft.Json.xml
+C:\Kredek\krystian_wolszczak\lab7\Planets 7\Planets\bin\Microsoft.ApplicationInsights.xml
+C:\Kredek\krystian_wolszczak\lab7\Planets 7\Planets\bin\Microsoft.AI.DependencyCollector.xml
+C:\Kredek\krystian_wolszczak\lab7\Planets 7\Planets\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Kredek\krystian_wolszczak\lab7\Planets 7\Planets\bin\Microsoft.AI.WindowsServer.xml
+C:\Kredek\krystian_wolszczak\lab7\Planets 7\Planets\bin\Microsoft.AI.Web.xml
+C:\Kredek\krystian_wolszczak\lab7\Planets 7\Planets\obj\Debug\Planets.csprojResolveAssemblyReference.cache
+C:\Kredek\krystian_wolszczak\lab7\Planets 7\Planets\obj\Debug\Planets.csproj.CoreCompileInputs.cache
+C:\Kredek\krystian_wolszczak\lab7\Planets 7\Planets\obj\Debug\Planets.dll
+C:\Kredek\krystian_wolszczak\lab7\Planets 7\Planets\obj\Debug\Planets.pdb

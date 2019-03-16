@@ -1,0 +1,57 @@
+﻿@model List<Planets.ViewModels.PlanetVM>
+@{
+    ViewBag.Title = "Planety Układu Słonecznego";
+}
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="~/Scripts/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="~/Scripts/StylePlanetsOfSolarSystem.css" />
+    <link href="@Url.Content("~/Scripts/Style.css")" rel="stylesheet" type="text/css" />
+
+    <title> Get All Planets</title>
+</head>
+<body>
+    <header>
+        @{
+        Html.RenderPartial("NavBar");
+        }
+    </header>
+    <!-- text definiujący planetę -->
+    <h2 id="WhatIsThePlanet">
+        Czym jest planeta?
+    </h2>
+    <h3 id="Definition">
+        <p>Planeta jest obiektem astronomicznym okrążającym gwiazdę lub pozostałości gwiezdne</p>
+        <p>w którego wnętrzu nie zachodzą reakcje termojądrowe, wystarczająco duży, </p>
+        <p>aby uzyskać prawie kulisty kształt oraz osiągnąć dominację w przestrzeni wokół własnej orbity.</p>
+    </h3>
+    <!-- Wypisanie wszystkich danych o dostępnych planetach -->
+    <div id="BulletList">
+        <!-- Pętla po wszystkich planetach -->
+        @foreach (var Planet in Model)
+        {
+            <h2 class="InfoAboutPlanet">@Planet.Name</h2>
+            <h4>Typ planety: @Planet.Type</h4>
+            <h4>Masa: @Planet.Mass kg</h4>
+            <h4>Promień: @Planet.Radius km</h4>
+            <h4>Życie na planecie: @Planet.Life</h4>
+            <h4>System planetarny: @Planet.PlanetarySystem</h4>
+            <!-- Konwersja z typu byte na string -->
+            <img src="data:image;base64,@System.Convert.ToBase64String(Planet.Image)" />
+            <hr />
+            <hr />
+        }
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+            integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+
+</body>
+</html>
+

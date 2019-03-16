@@ -1,0 +1,25 @@
+﻿body {
+    background-color:black;
+}
+
+header {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    color: gold;
+    font-size: 40px;
+    text-align: center;
+}
+
+#bulletList {
+    text-align: center;
+    color: whitesmoke;
+    font-size: 20px;
+    margin-top: 3%;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

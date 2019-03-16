@@ -1,0 +1,40 @@
+﻿
+@{
+    ViewBag.Title = "SolarSystem";
+}
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="~/Scripts/StylePlanetsOfSolarSystem.css" />
+    <link rel="stylesheet" type="text/css" href="~/Scripts/StyleSolarSystem.css" />
+</head>
+
+<body>
+    <header>
+        @{
+        Html.RenderPartial("NavBar");
+        }
+    </header>
+    <!-- Obraz układu słonecznego -->
+    <img src="~/Content/Images/Solar-system.jpg" />
+    <!-- Budowa układu słonecznego -->
+    <h2 id="Heading"> Układ słoneczny składa się z następujących obiektów: </h2>
+    <div id="BulletList">
+        <ul>
+            <li> Słońca </li>
+            <li> Czterech planet skalistych - Merkurego, Wenus, Ziemi i Marsa</li>
+            <li> Pasa planetoid</li>
+            <li> Czterech gazowych planet - Jowisza, Saturna, Urana i Neptuna</li>
+            <li> Księżyców planet skalistych i gazowych</li>
+            <li> Niewielkich obiektów leżących poza orbitą Neptuna, w tym: </li>
+            <ul>
+                <li> obiektów pasa Kuipera - między innymi Pluton, który do niedawna był zaliczany do planet</li>
+                <li> obłoku Oorta</li>
+            </ul>
+        </ul>
+    </div>
+    <img src="~/Content/Gifs/PlanetsInSolarSystem.gif" />
+</body>
+</html>
+

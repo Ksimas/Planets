@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="PlanetsDbModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="PlanetsDbEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Eclipse" EntityType="PlanetsDbModel.Eclipse" />
+    <EntitySet Name="IsThereLife" EntityType="PlanetsDbModel.IsThereLife" />
+    <EntitySet Name="MessageFromUser" EntityType="PlanetsDbModel.MessageFromUser" />
+    <EntitySet Name="Planet" EntityType="PlanetsDbModel.Planet" />
+    <EntitySet Name="PlanetarySystem" EntityType="PlanetsDbModel.PlanetarySystem" />
+    <EntitySet Name="Star" EntityType="PlanetsDbModel.Star" />
+    <EntitySet Name="TypeOfPlanet" EntityType="PlanetsDbModel.TypeOfPlanet" />
+    <AssociationSet Name="FK__Planet__Life__693CA210" Association="PlanetsDbModel.FK__Planet__Life__693CA210">
+      <End Role="IsThereLife" EntitySet="IsThereLife" />
+      <End Role="Planet" EntitySet="Planet" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Planet__Image__68487DD7" Association="PlanetsDbModel.FK__Planet__Image__68487DD7">
+      <End Role="TypeOfPlanet" EntitySet="TypeOfPlanet" />
+      <End Role="Planet" EntitySet="Planet" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Planet__Planetar__6A30C649" Association="PlanetsDbModel.FK__Planet__Planetar__6A30C649">
+      <End Role="PlanetarySystem" EntitySet="PlanetarySystem" />
+      <End Role="Planet" EntitySet="Planet" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Star__PlanetaryS__04E4BC85" Association="PlanetsDbModel.FK__Star__PlanetaryS__04E4BC85">
+      <End Role="PlanetarySystem" EntitySet="PlanetarySystem" />
+      <End Role="Star" EntitySet="Star" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Eclipse">
+    <Key>
+      <PropertyRef Name="IDEclipse" />
+    </Key>
+    <Property Name="IDEclipse" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DataOfEclipse" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="StartEclipse" Type="Time" Nullable="false" Precision="7" />
+    <Property Name="MaxPhase" Type="Time" Nullable="false" Precision="7" />
+    <Property Name="EndEclipse" Type="Time" Nullable="false" Precision="7" />
+    <Property Name="Discription" Type="String" Nullable="false" MaxLength="256" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="IsThereLife">
+    <Key>
+      <PropertyRef Name="IDLife" />
+    </Key>
+    <Property Name="IDLife" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Life" Type="String" Nullable="false" MaxLength="32" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Planet" Relationship="PlanetsDbModel.FK__Planet__Life__693CA210" FromRole="IsThereLife" ToRole="Planet" />
+  </EntityType>
+  <EntityType Name="MessageFromUser">
+    <Key>
+      <PropertyRef Name="MessageID" />
+    </Key>
+    <Property Name="MessageID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Author" Type="String" Nullable="false" MaxLength="32" FixedLength="false" Unicode="true" />
+    <Property Name="Content" Type="String" Nullable="false" MaxLength="360" FixedLength="false" Unicode="true" />
+    <Property Name="Date" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="Planet">
+    <Key>
+      <PropertyRef Name="IDPlanet" />
+    </Key>
+    <Property Name="IDPlanet" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="Type" Type="Int32" Nullable="false" />
+    <Property Name="Mass" Type="Double" Nullable="false" />
+    <Property Name="Radius" Type="Double" Nullable="false" />
+    <Property Name="Life" Type="Int32" Nullable="false" />
+    <Property Name="PlanetarySystem" Type="Int32" Nullable="false" />
+    <Property Name="Image" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <NavigationProperty Name="IsThereLife" Relationship="PlanetsDbModel.FK__Planet__Life__693CA210" FromRole="Planet" ToRole="IsThereLife" />
+    <NavigationProperty Name="TypeOfPlanet" Relationship="PlanetsDbModel.FK__Planet__Image__68487DD7" FromRole="Planet" ToRole="TypeOfPlanet" />
+    <NavigationProperty Name="PlanetarySystem1" Relationship="PlanetsDbModel.FK__Planet__Planetar__6A30C649" FromRole="Planet" ToRole="PlanetarySystem" />
+  </EntityType>
+  <EntityType Name="PlanetarySystem">
+    <Key>
+      <PropertyRef Name="IDPlanetarySystem" />
+    </Key>
+    <Property Name="IDPlanetarySystem" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="System" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Planet" Relationship="PlanetsDbModel.FK__Planet__Planetar__6A30C649" FromRole="PlanetarySystem" ToRole="Planet" />
+    <NavigationProperty Name="Star" Relationship="PlanetsDbModel.FK__Star__PlanetaryS__04E4BC85" FromRole="PlanetarySystem" ToRole="Star" />
+  </EntityType>
+  <EntityType Name="Star">
+    <Key>
+      <PropertyRef Name="IDPlanet" />
+    </Key>
+    <Property Name="IDPlanet" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NameStar" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="TypeStar" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="false" />
+    <Property Name="Mass" Type="Double" Nullable="false" />
+    <Property Name="Radius" Type="Double" Nullable="false" />
+    <Property Name="PlanetarySystem" Type="Int32" Nullable="false" />
+    <Property Name="Image" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <NavigationProperty Name="PlanetarySystem1" Relationship="PlanetsDbModel.FK__Star__PlanetaryS__04E4BC85" FromRole="Star" ToRole="PlanetarySystem" />
+  </EntityType>
+  <EntityType Name="TypeOfPlanet">
+    <Key>
+      <PropertyRef Name="IDType" />
+    </Key>
+    <Property Name="IDType" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Type" Type="String" Nullable="false" MaxLength="32" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Planet" Relationship="PlanetsDbModel.FK__Planet__Image__68487DD7" FromRole="TypeOfPlanet" ToRole="Planet" />
+  </EntityType>
+  <Association Name="FK__Planet__Life__693CA210">
+    <End Type="PlanetsDbModel.IsThereLife" Role="IsThereLife" Multiplicity="1" />
+    <End Type="PlanetsDbModel.Planet" Role="Planet" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="IsThereLife">
+        <PropertyRef Name="IDLife" />
+      </Principal>
+      <Dependent Role="Planet">
+        <PropertyRef Name="Life" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Planet__Image__68487DD7">
+    <End Type="PlanetsDbModel.TypeOfPlanet" Role="TypeOfPlanet" Multiplicity="1" />
+    <End Type="PlanetsDbModel.Planet" Role="Planet" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TypeOfPlanet">
+        <PropertyRef Name="IDType" />
+      </Principal>
+      <Dependent Role="Planet">
+        <PropertyRef Name="Type" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Planet__Planetar__6A30C649">
+    <End Type="PlanetsDbModel.PlanetarySystem" Role="PlanetarySystem" Multiplicity="1" />
+    <End Type="PlanetsDbModel.Planet" Role="Planet" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PlanetarySystem">
+        <PropertyRef Name="IDPlanetarySystem" />
+      </Principal>
+      <Dependent Role="Planet">
+        <PropertyRef Name="PlanetarySystem" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Star__PlanetaryS__04E4BC85">
+    <End Type="PlanetsDbModel.PlanetarySystem" Role="PlanetarySystem" Multiplicity="1" />
+    <End Type="PlanetsDbModel.Star" Role="Star" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PlanetarySystem">
+        <PropertyRef Name="IDPlanetarySystem" />
+      </Principal>
+      <Dependent Role="Star">
+        <PropertyRef Name="PlanetarySystem" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

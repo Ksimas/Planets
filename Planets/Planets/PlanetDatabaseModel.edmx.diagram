@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="170a33c535ee47baa706be23171e481c" Name="Diagram1">
+        <EntityTypeShape EntityType="PlanetsDbModel.Eclipse" Width="1.5" PointX="5.75" PointY="1.125" />
+        <EntityTypeShape EntityType="PlanetsDbModel.IsThereLife" Width="1.5" PointX="0.75" PointY="7.125" />
+        <EntityTypeShape EntityType="PlanetsDbModel.MessageFromUser" Width="1.5" PointX="5.75" PointY="4.125" />
+        <EntityTypeShape EntityType="PlanetsDbModel.Planet" Width="1.5" PointX="3" PointY="3.125" />
+        <EntityTypeShape EntityType="PlanetsDbModel.PlanetarySystem" Width="1.5" PointX="0.75" PointY="3.875" />
+        <EntityTypeShape EntityType="PlanetsDbModel.Star" Width="1.5" PointX="3" PointY="7.375" />
+        <EntityTypeShape EntityType="PlanetsDbModel.TypeOfPlanet" Width="1.5" PointX="0.75" PointY="0.75" />
+        <AssociationConnector Association="PlanetsDbModel.FK__Planet__Life__693CA210" />
+        <AssociationConnector Association="PlanetsDbModel.FK__Planet__Image__68487DD7" />
+        <AssociationConnector Association="PlanetsDbModel.FK__Planet__Planetar__6A30C649" />
+        <AssociationConnector Association="PlanetsDbModel.FK__Star__PlanetaryS__04E4BC85" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

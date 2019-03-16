@@ -1,0 +1,37 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="~/Scripts/StylePlanetsOfSolarSystem.css" />
+    <link rel="stylesheet" type="text/css" href="~/Scripts/StyleIndex.css" />
+</head>
+
+<body>
+
+    <div>
+        <!-- Nagłówek -->
+        <header>
+            Znane i mniej znane ciała niebieskie
+        </header>
+        <div id="bulletList" >
+            <h4>
+                <p>Czytaj o: </p>
+                <!-- lista wypunktowana -->
+                <ul>
+                    <li>@Html.ActionLink("Układ słoneczny", "SolarSystem", "Home")</li>
+                    <li>@Html.ActionLink("Planety układu słonecznego", "PlanetsOfSolarSystem", "Home") </li>
+                    <li>@Html.ActionLink("Podstaowe informacje o Słońcu", "Sun", "Home")</li>
+                    <li>@Html.ActionLink("Najbliższe Zaćmienie Słońca widoczne z Polski", "Eclipse", "Home")</li>
+
+                </ul>
+            </h4>
+        </div>
+          <!-- obraz przedstawiający Drogę mleczną -->
+            <img id="Milky way" src="~/Content/Images/Milky-way.jpg"/>
+    </div>
+
+</body>
+
+</html>

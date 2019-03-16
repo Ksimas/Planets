@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="PlanetsDbModelStoreContainer" CdmEntityContainer="PlanetsDbEntities">
+    <EntitySetMapping Name="Eclipse">
+      <EntityTypeMapping TypeName="PlanetsDbModel.Eclipse">
+        <MappingFragment StoreEntitySet="Eclipse">
+          <ScalarProperty Name="Discription" ColumnName="Discription" />
+          <ScalarProperty Name="EndEclipse" ColumnName="EndEclipse" />
+          <ScalarProperty Name="MaxPhase" ColumnName="MaxPhase" />
+          <ScalarProperty Name="StartEclipse" ColumnName="StartEclipse" />
+          <ScalarProperty Name="DataOfEclipse" ColumnName="DataOfEclipse" />
+          <ScalarProperty Name="IDEclipse" ColumnName="IDEclipse" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="IsThereLife">
+      <EntityTypeMapping TypeName="PlanetsDbModel.IsThereLife">
+        <MappingFragment StoreEntitySet="IsThereLife">
+          <ScalarProperty Name="Life" ColumnName="Life" />
+          <ScalarProperty Name="IDLife" ColumnName="IDLife" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MessageFromUser">
+      <EntityTypeMapping TypeName="PlanetsDbModel.MessageFromUser">
+        <MappingFragment StoreEntitySet="MessageFromUser">
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Content" ColumnName="Content" />
+          <ScalarProperty Name="Author" ColumnName="Author" />
+          <ScalarProperty Name="MessageID" ColumnName="MessageID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Planet">
+      <EntityTypeMapping TypeName="PlanetsDbModel.Planet">
+        <MappingFragment StoreEntitySet="Planet">
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="PlanetarySystem" ColumnName="PlanetarySystem" />
+          <ScalarProperty Name="Life" ColumnName="Life" />
+          <ScalarProperty Name="Radius" ColumnName="Radius" />
+          <ScalarProperty Name="Mass" ColumnName="Mass" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="IDPlanet" ColumnName="IDPlanet" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PlanetarySystem">
+      <EntityTypeMapping TypeName="PlanetsDbModel.PlanetarySystem">
+        <MappingFragment StoreEntitySet="PlanetarySystem">
+          <ScalarProperty Name="System" ColumnName="System" />
+          <ScalarProperty Name="IDPlanetarySystem" ColumnName="IDPlanetarySystem" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Star">
+      <EntityTypeMapping TypeName="PlanetsDbModel.Star">
+        <MappingFragment StoreEntitySet="Star">
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="PlanetarySystem" ColumnName="PlanetarySystem" />
+          <ScalarProperty Name="Radius" ColumnName="Radius" />
+          <ScalarProperty Name="Mass" ColumnName="Mass" />
+          <ScalarProperty Name="TypeStar" ColumnName="TypeStar" />
+          <ScalarProperty Name="NameStar" ColumnName="NameStar" />
+          <ScalarProperty Name="IDPlanet" ColumnName="IDPlanet" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TypeOfPlanet">
+      <EntityTypeMapping TypeName="PlanetsDbModel.TypeOfPlanet">
+        <MappingFragment StoreEntitySet="TypeOfPlanet">
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="IDType" ColumnName="IDType" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

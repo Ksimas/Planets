@@ -1,0 +1,60 @@
+﻿@model List<Planets.ViewModels.EclipseVM>
+@{
+    ViewBag.Title = "Eclipse";
+}
+
+<html>
+<head>
+    <!-- gwarancja wyświetlania polskich znaków-->
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="~/Scripts/StylePlanetsOfSolarSystem.css" />
+    <link rel="stylesheet" type="text/css" href="~/Scripts/StyleEclipse.css" />
+    <script src="~/Scripts/EclipseJ.js"></script>
+</head>
+<body>
+    <header>
+        @{
+        Html.RenderPartial("NavBar");
+        }
+
+        <p>
+            Kalendarz najbliższych zaćmień Słońca
+        </p>
+        <p>
+            widocznych z terenu Polski
+        </p>
+    </header>
+    <table id="TimerTable">
+        <tr>
+            <td>najbliższego zaćmienia pozostało:</td>
+        </tr>
+        <tr>
+            <td>00:00:00:00</td>
+        </tr>
+    </table>
+    <!-- tabela z danymi o zbliżających się zaćmieniach -->
+    <!-- trzeba zrobić osobną tabelę w SQL'u i tam te dane wrzucić -->
+    <table id="table" style="width:50%;">
+        <tr>
+            <td> data zaćmienia </td>
+            <td> początek </td>
+            <td> max faza </td>
+            <td> koniec </td>
+            <td> opis </td>
+        </tr>
+        @foreach (var Planet in Model)
+        {
+        <tr>
+            <td>@Planet.DataOfEclipse</td>
+            <td>@Planet.StartEclipse</td>
+            <td>@Planet.MaxPhase</td>
+            <td>@Planet.EndPhase</td>
+            <td>@Planet.Discription</td>
+        </tr>
+         }
+    </table>
+    <!-- Wystartowanie zegara odliczającego czas do najblizszego zaćmienia-->
+    <script>StartTime()</script>
+</body>
+</html>
+

@@ -1,0 +1,52 @@
+﻿@model List<Planets.ViewModels.StarVM>
+@{
+    ViewBag.Title = "Sun";
+}
+
+<html>
+<head>
+    <!-- gwarancja wyświetlania polskich znaków-->
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="~/Scripts/StylePlanetsOfSolarSystem.css" />
+    <link rel="stylesheet" type="text/css" href="~/Scripts/StyleSun.css" />
+    <script src="~/Scripts/EclipseJ.js"></script>
+</head>
+<body>
+    <header>
+        @{
+        Html.RenderPartial("NavBar");
+        }
+        <h2 id="Heading">
+            Podstawowe informacje o Słońcu
+        </h2>
+    </header>
+    <div id="BulletList">
+        <!-- Pętla po wszystkich planetach -->
+        @foreach (var Planet in Model)
+        {
+            <h2 class="InfoAboutPlanet">@Planet.Name</h2>
+            <h4>Typ gwiazdy: @Planet.Type</h4>
+            <h4>Masa: @Planet.Mass kg</h4>
+            <h4>Promień: @Planet.Radius km</h4>
+            <h4>System planetarny: @Planet.PlanetarySystem</h4>
+            <!-- Konwersja z typu byte na string -->
+            <img src="data:image;base64,@System.Convert.ToBase64String(Planet.Image)" />
+        }
+    </div>
+    <h3 id="Discription">
+        <p> Słońce jest jedyną z miliardów gwiazd w galaktyce mimo to jest dla nas szczególnie istotne. </p>
+        <p> Owa gwiazda znajduje się najbliżej Ziemi (drugą jest Proxima Centauri), Słońce leży w środku Układu Słonecznego i jest jego największym obiektem. </p>
+            Żółty karzeł zawiera 99.8 % masy Układu Słonecznego, a w środku Słońca zmieściłoby się milion planet wielkości Ziemi!
+        <p> Widzialna część Słońca osiąga temperaturę 5500 stopni Celcjusza, podczas gdy rdzeń gwiazdy przekracza temperaturę 15 milionów stopni Celcjusza.
+            Słońce w każdej sekundzie produkuje tyle energii co wybuch 100 miliardów ton dynamitu.</p>
+        <p> Słońce powstało około 4.6 miliarda lat temu. Wielu naukowców sądzi, że Słońce i reszta Układu Słonecznego powstała z wielkiej, rotującej chmury gazu i pyłu znanej jako mgławica słoenczna.
+            Mgławica słoneczna zapadła się poprzez grawitację, dysk wirował coraz szybciej, szybciej tworząc dysk. 
+            Większość materiału została wciągnięta w kierunku środka tworząc Słońce.</p>
+    </h3>
+</body>
+</html>
+
+
+
+
+

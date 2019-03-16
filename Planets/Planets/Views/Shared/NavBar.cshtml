@@ -1,0 +1,51 @@
+﻿<!-- Pasek nawigacji -->
+<!-- Toggler pojawia się, gdy widok jest mniejszy niż medium-->
+<!-- Przy wysokiej rozdzielczości występuje wersja rozszerzona-expend -->
+<div id="navigation">
+    <nav class="navbar navbar-light navbar-expand-md ">
+        <!-- Brand -->
+        <a class="navbar-brand" href="Index">
+            <img src="~/Img/Logos.jpg" alt=""
+                 width="40" height="40" class="d-inline-block mx-1 "> Stella.pl
+        </a>
+        <!-- toggler -->
+        <!-- parametr data-toggle umożliwa wysunięcie się opcji-->
+        <!-- atrybuty aria pomagają czytnikom, np. dla osób niepełnosprawnych-->
+        <button class="navbar-toggler order-first" type="button"
+                data-toggle="collapse" data-target="#MainPage"
+                aria-controls="MainPage" aria-expanded="false">
+            <span class="navbar-toggler-icon bg-danger"></span>
+        </button>
+        <!-- Menu w navbarze-->
+        <!-- collapse - zapadnięcie nawigacji -->
+        <div class="collapse navbar-collapse" id="MainPage">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="Index">Strona główna</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown"
+                       role="button">Układ Słoneczny</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="SolarSystem"> Układ Słoneczny</a>
+                        <a class="dropdown-item" href="PlanetsOfSolarSystem"> Planety Układu Słonecznego</a>
+                        <a class="dropdown-item" href="Sun"> O Słońcu</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown"
+                       role="button">Wydarzenia</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="Eclipse"> Zaćmienia Słońca na terenie Polski</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Contact">Kontakt</a>
+                </li>
+            </ul>
+        </div>
+
+
+    </nav>
+</div>
+
