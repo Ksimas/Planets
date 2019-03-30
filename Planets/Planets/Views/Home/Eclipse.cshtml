@@ -45,10 +45,10 @@
         @foreach (var Planet in Model)
         {
         <tr>
-            <td>@Planet.DataOfEclipse</td>
-            <td>@Planet.StartEclipse</td>
-            <td>@Planet.MaxPhase</td>
-            <td>@Planet.EndPhase</td>
+            <td>@Planet.DataOfEclipse.ToString("dd.MM.yyyy")</td>
+            <td>@Planet.StartEclipse.ToString(@"hh\:mm")</td>
+            <td>@Planet.MaxPhase.ToString(@"hh\:mm")</td>
+            <td>@Planet.EndPhase.ToString(@"hh\:mm")</td>
             <td>@Planet.Discription</td>
         </tr>
          }
